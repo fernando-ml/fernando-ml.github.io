@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Fernando Martínez / Home"
+title                    : "Fernando / Homepage"
 title_separator          : "-"
 name                     : &name "Fernando Martínez"
 description              : &description "personal description"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Fernando Martínez-López"
   avatar           : "PersonalImage.JPG"
-  bio              : "Data & ML Enthusiast 🤖 \nResearch Assistant @ Fordham University \n& Quant AVP @ MUFG"
+  bio              : "Data & ML Enthusiast 🤖 \nResearch Assistant @ Fordham University \n & Quant AVP @ MUFG"
   location         : "New York, USA"
   # employer         : ""
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
