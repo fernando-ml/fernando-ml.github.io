@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Fernando Martinez / Website"
+title                    : "Fernando Martínez / Home"
 title_separator          : "-"
 name                     : &name "Fernando Martínez"
 description              : &description "personal description"
@@ -84,7 +84,7 @@ author:
   avatar           : "PersonalImage.JPG"
   bio              : "Data & ML Enthusiast 🤖"
   location         : "New York, USA"
-  employer         : "Fordham University / MUFG Securities"
+  employer         : "Fordham University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=XfyusDUAAAAJ&hl=en"
   email            : "ml.fernando@hotmail.com"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "www.linkedin.com/in/mlfernando"
+  linkedin         : "mlfernando"
   orcid            : "http://orcid.org/0009-0007-2208-2691"
   pinterest        :
   soundcloud       :
