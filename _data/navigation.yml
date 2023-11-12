@@ -3,11 +3,11 @@ main:
   - title: "Publications"
     url: "https://scholar.google.com/citations?user=XfyusDUAAAAJ&hl=en"
 
-  - title: "Talks"
-    url: /talks/    
+  # - title: "Talks"
+  #   url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Teaching"
+  #   url: /teaching/    
     
   - title: "Portfolio"
     url: /portfolio/

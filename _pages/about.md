@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼🙋🏽‍♂️ About me"
+title: "🙋🏽‍♂️ About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,12 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Data Scientist and Machine Learning Engineer from the Dominican Republic, working in multiple machine learning applications and getting the best insights out of 21st Century gold (data). I enjoy turning complex problems into simple, practical, innovative, and impactful solutions. My job is to create end-to-end Machine Learning products alongside performing hands-on data analyses over enormous datasets toward detecting patterns and inducing better data-driven decision making.
+I'm a Data Scientist and Machine Learning Engineer from the Dominican Republic, working in multiple machine learning applications and getting the best insights out of data, the 21st Century gold. I enjoy turning complex problems into simple, practical, innovative, and impactful solutions. My job is to create end-to-end Machine Learning products alongside performing hands-on data analyses over enormous datasets toward detecting patterns and inducing better data-driven decision making.
 
-I have 5+ years of experience applying quantitative analysis, experiment design, and developing machine learning models for diverse business solutions. During this journey, I have had the opportunity to design and create models that are helping organizations manage risk behavior profiles, reduce tax gaps, and build advanced analytical engines for forecasting and detecting deviations from non-structured information.
+With over 5 years of industry experience, I have applied quantitative analysis, experiment design, and develop machine learning models for diverse business solutions. Throughout this experience, I have had the opportunity to design and create models that are helping organizations manage risk behavior profiles, reduce tax gaps, and build advanced analytical engines for forecasting and detecting deviations from unstructured information.
 
-Lately I have been doing research on Artificial Intelligence, more specifically on model robustness, deep learning interpretability (computer vision & large language models), hybrid intelligence, science applications, .
-
+Lately, my focus has been on research in Artificial Intelligence, especially in making deep learning models more reliable, robust, and easier to understand, particularly in computer vision and large language models. Moreover, my work has been focused on hybrid intelligence and its application at the intersection of AI with multiple scientific areas, helping us uncover new insights and solve problems more creatively. Ultimately, I believe AI is not only about pushing the boundaries of technology; it's about ensuring these tools are used in ways that are meaningful, responsible, and truly beneficial to society.
+<!-- 
 A data-driven personal website
 ======
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
@@ -51,4 +51,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
