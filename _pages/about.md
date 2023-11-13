@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Fernando Martínez"
-excerpt: "About me"
+excerpt: "Personal site"
 author_profile: true
 redirect_from: 
   - /about/
