@@ -11,7 +11,8 @@ redirect_from:
 
 * Developing an Adaptive Multi-Modality Deep Learning Framework, targeting the identification of Zero-day DoS attacks by recognizing anomalies outside established patterns.
 * Joint collaboration with the Fordham EDM lab to research methods to detect AI revised and mixed human/AI academic materials, enhancing the use of generative models for academic integrity.
-* 
+* Joint collaboration with Harvard Medical School and the Massachusetss General Hospital exploring the use of ML tethods to predict risks of Hydroxychloroquine Retinopathy after initializing HCQ medication.
+
 <!-- * Single pages: _pages/
 * Collections of pages are .md or .html files in:
   * _publications/
