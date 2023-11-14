@@ -1,7 +1,7 @@
 ---
 title: "Rediscovering The Particle in a Box: Machine learning regression analysis for hypothesis generation in physical chemistry lab"
 collection: publications
-permalink: /publication/2023-10-03-ChemML
+permalink: /publication/2-ChemML
 excerpt: '<b>Accepted</b>'
 venue: 'Journal of Chemical Education'
 citation: 'Thrall E, <b>Martinez Lopez F</b>, Egg T, Lee SE, Schrier J, Zhao Y. Rediscovering the particle in a box: Machine learning regression analysis for hypothesis generation in physical chemistry lab. ChemRxiv. Cambridge: Cambridge Open Engage; 2023'
