@@ -2,7 +2,7 @@
 title: "Admissions in the Age of AI: Detecting AI-Generated Application Materials in Higher Education"
 collection: publications
 permalink: /publication/2024-03-18-AdmisionsAI
-excerpt: '<b>Submited</b>'
+excerpt: '<u>Submited</u>'
 date: 2024-03-18
 venue: 'SIAM Conference on Data Mining'
 citation: 'Yijun Zhao, <b>Fernando Martinez</b>, Haoran Xue, Gary M. Weiss ”Admissions in the Age of AI: Detecting AI-Generated Application Materials in Higher Education,” SDM24.'
