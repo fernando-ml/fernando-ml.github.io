@@ -5,7 +5,9 @@ main:
     
   #"https://scholar.google.com/citations?user=XfyusDUAAAAJ&hl=en"
 
-  # - title: "Talks"
+  - title: "Ongoing Research"
+    url: /ongoingresearch/
+  # - title: "Ongoing"
   #   url: /talks/    
 
   # - title: "Teaching"
