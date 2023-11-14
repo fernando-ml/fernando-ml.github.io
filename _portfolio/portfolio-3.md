@@ -1,6 +1,6 @@
 ---
 title: "Predicting Term Deposit Subscriptions"
-excerpt: "Data Mining Final Project Course"
+excerpt: "Data Mining Final Project Course<br/><img src='/images/term_deposit.png'>"
 collection: portfolio
 ---
 
