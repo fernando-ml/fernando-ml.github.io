@@ -1,7 +1,9 @@
 # main links links
 main:
   - title: "Publications"
-    url: "https://scholar.google.com/citations?user=XfyusDUAAAAJ&hl=en"
+    url: /publications/
+    
+  #"https://scholar.google.com/citations?user=XfyusDUAAAAJ&hl=en"
 
   # - title: "Talks"
   #   url: /talks/    
