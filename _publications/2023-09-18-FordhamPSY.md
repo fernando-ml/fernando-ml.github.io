@@ -2,10 +2,7 @@
 title: "A Machine Learning Approach to Examine Personality, Adjustment, and Engineering Identity Among College Engineering Students"
 collection: publications
 permalink: /publication/2023-09-18-FordhamPSY
-excerpt: '<b>Submited</b>'
-date: 2023-09-18
-venue: ''
-citation: ''
+excerpt: '<b>Submitted</b>'
 ---
 <b>Background:</b> This study examined whether and to what extent general personality traits based on the Big Five model (McCrae & Costa, 2003), vocational personality types based on Hollands’ Holland’s Self-Directed Search (1985), and students’ adjustment to college as measured by the Student Adaptation to College Questionnaire (SACQ; Baker & Siryk, 1999) predicted academic achievement and engineering identity among undergraduate engineering students by using machine learning models. 
 <b>Hypotheses:</b> We anticipated that general personality traits based on the Big Five model (McCrae & Costa, 2003), vocational personality types based on Holland (1985), and students’ adjustment to college as measured by the SACQ (Baker & Siryk, 1999) would predict academic achievement and engineering identity among undergraduate engineering students.
