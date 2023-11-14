@@ -234,8 +234,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comment: true
+      share: False
+      comment: False
   # _talks
   - scope:
       path: ""

@@ -1,6 +1,6 @@
 ---
-title: "Study of the Stable Marriage Problem"
-excerpt: "Study of the Stable Marriage Algorithm | Game Theory Problem<br/><img src='/images/stable_marriage.png'>"
+title: "Stable Marriage Problem"
+excerpt: "Study of the Stable Marriage Problem; Game Theory Problem<br/><img src='/images/stable_marriage.png'>"
 collection: portfolio
 ---
 
