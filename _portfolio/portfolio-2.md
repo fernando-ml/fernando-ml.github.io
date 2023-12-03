@@ -1,10 +1,12 @@
 ---
-title: "Stable Marriage Problem"
-excerpt: "Study of the Stable Marriage Problem; Game Theory Problem<br/><img src='/images/stable_marriage.png'>"
+title: "Analysis of Motor Vehicle Collisions in New York City"
+excerpt: "Analysis of Motor Vehicle Collisions in New York City<br/><img src='/images/NYCCollisions.png'>"
 collection: portfolio
 ---
 
-The Stable Marriage or Stable Matching Problem is a game theory problem applied in multiple areas. Solutions to this problem help to match two sets of members who have an interest in each other. The implementation of solutions to this problem has led to enormous advances in our society's development.
+Motor vehicle collisions are not an exception, even in cities with an outstanding public transportation system like New York City. By analyzing crash events through 2016-2021, we see that even though the number of collisions has presented a reduction, their dangerousness has dramatically increased, showing a higher number of events where persons were either injured or killed. We detected a slightly positive trend in the number of killed people in motor vehicle crashes; meanwhile, the number of injuries reduces vaguely. Most NYC crash events happen on Fridays, predominately around 5:00 PM. However, the most lethal time (highest number of killed people) is during the weekends' late-night hours.
 
-[Report](/files/FernandoMartinez_TheStableMarriageProblem.pdf){: .btn}
-[Slides](/files/FML_StableMarriage_slides.pdf){: .btn}
+Among NYC’s boroughs, Brooklyn is constantly the borough with the largest number of tragic accidents (at least one person injured or killed), where the most predominant contributing factors of these events are: Driver was distracted, the driver was following too closely, failure to yield right-of-way, unsafe speed, and traffic control disregarded.
+
+[Report](/files/FernandoMartinez_NYCCollisions.pdf){: .btn}
+[Tableau Public ](https://public.tableau.com/views/AnalysisofMotorVehicleCollisionsNYC/AnalysisofMotorVehicleCollisionsinNewYorkCity?:language=en-US&:display_count=n&:origin=viz_share_link){: .btn}
