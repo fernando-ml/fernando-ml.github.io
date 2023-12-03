@@ -5,6 +5,6 @@ collection: portfolio
 ---
 Developed an agent that learns how to play the classic game Snake. The core idea revolves around reinforcement learning, utilizing a simple neural network.
 
-<img src='/images/SnakeGIF.gif'>
+<img src='/images/SnakeGIF.gif?raw=true'>
 
 [Code](https://github.com/ferdmartin/LearningLeap/tree/main/SnakeRL){: .btn}
