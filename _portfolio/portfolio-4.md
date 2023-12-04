@@ -10,4 +10,4 @@ During this project, we play the roleplaying game of working on a team developin
 
 [Report](https://github.com/ferdmartin/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/report.pdf){: .btn}
 [Slides](https://github.com/ferdmartin/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/slides.pdf){: .btn}
-[Repo](https://github.com/ferdmartin/ClassProjectsMSc/tree/main/Data%20Mining){: .btn}
+[Code](https://github.com/ferdmartin/ClassProjectsMSc/tree/main/Data%20Mining){: .btn}
