@@ -6,4 +6,4 @@ collection: portfolio
 
 Project to learn about recommendation systems. Data from Netflix Recommendation System - Kaggle Competition.
 
-[Code](https://github.com/ferdmartin/Netflix-Recommender-System){: .btn}
+[Code](https://github.com/fernando-ml/Netflix-Recommender-System){: .btn}

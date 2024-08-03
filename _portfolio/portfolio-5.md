@@ -8,6 +8,6 @@ Marketing is a vital part of almost every business, since it is the sum of activ
 Due to the importance of marketing, we decided to use a bank marketing dataset to create a model that can predict if a certain client is likely to open a term deposit account or not. For context, in banking a term deposit account is a type of account held at a financial institution where money is locked up for some set period of time, that pays the depositor compensation in the form of interest on the account balance.
 During this project, we play the roleplaying game of working on a team developing a model to set it into a production environment in the banking market.
 
-[Report](https://github.com/ferdmartin/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/report.pdf){: .btn}
-[Slides](https://github.com/ferdmartin/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/slides.pdf){: .btn}
-[Code](https://github.com/ferdmartin/ClassProjectsMSc/tree/main/Data%20Mining){: .btn}
+[Report](https://github.com/fernando-ml/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/report.pdf){: .btn}
+[Slides](https://github.com/fernando-ml/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/slides.pdf){: .btn}
+[Code](https://github.com/fernando-ml/ClassProjectsMSc/tree/main/Data%20Mining){: .btn}

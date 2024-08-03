@@ -9,6 +9,6 @@ I've taken on the challenge of delving into Google's Imagen by pursuing 'Mini Im
 
 <img src="https://imagen.research.google/main_gallery_images/sprouts-in-the-shape-of-text-imagen.jpg" alt="Imagen" width="300" height="300">
 
-[My Code](https://github.com/ferdmartin/MinImagenStudy/tree/main){: .btn}
+[My Code](https://github.com/fernando-ml/MinImagenStudy/tree/main){: .btn}
 [Google's article](https://imagen.research.google/){: .btn}
 [Paper](https://arxiv.org/abs/2205.11487){: .btn}
