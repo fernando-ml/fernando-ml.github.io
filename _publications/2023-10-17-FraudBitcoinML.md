@@ -1,7 +1,7 @@
 ---
 title: "Rediscovering Fraud Detection in Bitcoin Transactions Using Machine Learning Models"
 collection: publications
-permalink: /publication/2023-10-17-FraudBitcoinML
+permalink: /publication/FraudBitcoinML
 excerpt: 'Performance study of ML techniques such as conventional ML models, regular MLP architectures, and graph convolutional networks to accurately detect fraudulent transactions in the Bitcoin Blockchain.'
 venue: 'WF-IoT'
 citation: '<b>F. Martinez</b>, M. Rahouti, A. Chehri, R. Amin and N. Ghani, "Rediscovering Fraud Detection in Bitcoin Transactions Using Machine Learning Models," 2023 IEEE 9th World Forum on Internet of Things (WF-IoT), Aveiro, Portugal, 2023, pp. 1-6, doi: 10.1109/WF-IoT58464.2023.10539490.'

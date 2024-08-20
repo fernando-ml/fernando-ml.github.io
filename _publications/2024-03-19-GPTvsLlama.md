@@ -1,7 +1,7 @@
 ---
 title: "GPT vs. Llama2: Which Comes Closer to Human Writing in Text Generation?"
 collection: publications
-permalink: /publication/2024-03-01-gptvsllama
+permalink: /publication/gptvsllama
 excerpt: '<b>F. Martinez</b>, G.M. Weiss, M. Palma, H. Xue, A. Borelli, Y. Zhao, "GPT vs. Llama2: Which Comes Closer to Human Writing in Text Generation?"'
 venue: 'EDM 2024'
 ---

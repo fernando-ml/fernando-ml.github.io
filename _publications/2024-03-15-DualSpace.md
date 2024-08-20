@@ -1,7 +1,7 @@
 ---
 title: "Redefining Cyber Resilience with Dual-Space Prototypical Networks for DDoS Attack Detection"
 collection: publications
-permalink: /publication/2023-09-18-DualSpace
+permalink: /publication/DualSpace
 excerpt: 'Our work introduces the Dual-space Prototypical network, a neural network that leverages a unique dual-space loss function to enhance the detection accuracy of distributed denial-of-service (DDoS) attacks, both known and novel patterns, through geometric and angular similarity measures in the latent space, demonstrating outstanding performance, especially on reduced training sets, which is a challenge for standard deep learning architectures.'
 
 # citation: '<b>F. Martinez</b>, M. Mapkar, A. Alfatemi, M. Rahouti, Y. Xin, K. Xiong, N. Ghani "Redefining Cyber Resilience with Dual-Space Prototypical Networks for DDoS Attack Detection," The 33rd International Conference on Computer Communications and Networks (ICCCN 2024)'

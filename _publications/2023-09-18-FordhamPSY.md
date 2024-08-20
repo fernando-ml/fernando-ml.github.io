@@ -1,7 +1,7 @@
 ---
 title: "A Machine Learning Approach to Examine Personality, Adjustment, and Engineering Identity Among College Engineering Students"
 collection: publications
-permalink: /publication/2023-09-18-FordhamPSY
+permalink: /publication/FordhamPSY
 excerpt: '<b>Submitted</b> Y. Ding, Q. Wang , <b>F. Martinez Lopez</b>, Y. Wu, Y. Zhao,  "A Machine Learning Approach to Examine Personality, Adjustment, and Engineering Identity Among College Engineering Students"'
 venue: '[PENDING]'
 ---

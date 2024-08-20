@@ -1,7 +1,7 @@
 ---
 title: "Admissions in the Age of AI: Detecting AI-Generated Application Materials in Higher Education"
 collection: publications
-permalink: /publication/2024-03-01-AdmisionsAI
+permalink: /publication/admisionsAI
 excerpt: '<b>Presented</b> Y. Zhao, A. Borelli, <b>F. Martinez</b>, H. Xue, G.M. Weiss "Admissions in the Age of AI: Detecting AI-Generated Application Materials in Higher Education"'
 venue: '2nd Annual Symposium on Data Science and AI: Empowering Society for the Greater Good, Fordham University'
 ---
