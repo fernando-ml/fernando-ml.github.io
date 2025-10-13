@@ -1,0 +1,10 @@
+---
+title: "Stackelberg Coupling of Online Representation Learning and Reinforcement Learning"
+collection: publications
+permalink: /publication/scorer
+excerpt: '<b>Fernando Martinez</b>, Tao Li, Yingdong Lu, Juntao Chen, "Stackelberg Coupling of Online Representation Learning and Reinforcement Learning"'
+venue: 'Preprint'
+---
+Deep Q-learning jointly learns representations and values within monolithic networks, promising beneficial co-adaptation between features and value estimates. Although this architecture has attained substantial success, the coupling between representation and value learning creates instability as representations must constantly adapt to non-stationary value targets, while value estimates depend on these shifting representations. This is compounded by high variance in bootstrapped targets, which causes bias in value estimation in off-policy methods. We introduce Stackelberg Coupled Representation and Reinforcement Learning (SCORER), a framework for value-based RL that views representation and Q-learning as two strategic agents in a hierarchical game. SCORER models the Q-function as the leader, which commits to its strategy by updating less frequently, while the perception network (encoder) acts as the follower, adapting more frequently to learn representations that minimize Bellman error variance given the leader's committed strategy. Through this division of labor, the Q-function minimizes MSBE while perception minimizes its variance, thereby reducing bias accordingly, with asymmetric updates allowing stable co-adaptation, unlike simultaneous parameter updates in monolithic solutions. Our proposed SCORER framework leads to a bi-level optimization problem whose solution is approximated by a two-timescale algorithm that creates an asymmetric learning dynamic between the two players. Extensive experiments on DQN and its variants demonstrate that gains stem from algorithmic insight rather than model complexity.
+
+[Paper](https://arxiv.org/abs/2508.07452){: .btn}

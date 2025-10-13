@@ -1,0 +1,12 @@
+---
+title: "SPRIG: Stackelberg Perception-Reinforcement Learning with Internal Game Dynamics"
+collection: publications
+permalink: /publication/sprig
+excerpt: '<b>F. Martinez-Lopez</b>, J. Chen, Y. Lu, "SPRIG: Stackelberg Perception-Reinforcement Learning with Internal Game Dynamics"'
+venue: 'AAAI 2025 Workshop on Planning and Reinforcement Learning (PRL)'
+---
+Deep reinforcement learning agents often face challenges to effectively coordinate perception and decision-making components, particularly in environments with high-dimensional sensory inputs where feature relevance varies. This work introduces SPRIG (Stackelberg Perception-Reinforcement learning with Internal Game dynamics), a framework that models the internal perception-policy interaction within a single agent as a cooperative Stackelberg game. In SPRIG, the perception module acts as a leader, strategically processing raw sensory states, while the policy module follows, making decisions based on extracted features. SPRIG provides theoretical guarantees through a modified Bellman operator while preserving the benefits of modern policy optimization. Experimental results on the Atari BeamRider environment demonstrate SPRIG's effectiveness, achieving around 30% higher returns than standard PPO through its game-theoretical balance of feature extraction and decision-making.
+
+
+[Paper](https://arxiv.org/abs/2502.14264){: .btn}
+[Workshop's program](https://prl-theworkshop.github.io/prl2025-aaai/){: .btn}
