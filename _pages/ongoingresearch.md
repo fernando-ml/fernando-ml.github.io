@@ -6,14 +6,14 @@ redirect_from:
   - /md/
   - /ongoingresearch.html
 ---
-Work in progress 🚧
+* Working on **Self-Confirming Transformer (SCT)**, a framework for offline multi-agent reinforcement learning that allows online adaptation to previously unseen, nonstationary opponents. **SCT** models opponent behavior as a "belief," conditioning its own actions on this belief through an objective inspired by the game-theoretic concept of self-confirming equilibrium. 
 <!-- ## Test title -->
 
 <!-- * Developing an Adaptive Multi-Modality Deep Learning Framework, targeting the identification of Zero-day DoS attacks by recognizing anomalies outside established patterns.
 * Joint collaboration with the Fordham EDM lab to research methods to detect AI revised and mixed human/AI academic materials, enhancing the use of generative models for academic integrity. -->
 <!-- * Joint collaboration with the University of Toronto and TorontoTech University developing an interpretable pattern discovery algorithm designed to predict diseases from clinical notes. -->
 <!-- * Joint collaboration with Harvard Medical School and the Massachusets General Hospital exploring the use of ML methods to evaluate risks of Hydroxychloroquine Retinopathy after initializing HCQ medication. -->
-Work in progress.
+<!-- Work in progress. -->
 <!-- * Single pages: _pages/
 * Collections of pages are .md or .html files in:
   * _publications/
