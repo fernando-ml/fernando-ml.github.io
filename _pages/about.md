@@ -11,7 +11,7 @@ home: true
     <p class="eyebrow">PhD researcher · Fordham University · New York</p>
     <p class="hero-availability">Seeking RL research internships · Summer 2027</p>
     <h1 id="intro-title">Learning to act.<br><em>Learning to adapt.</em></h1>
-    <p class="hero-intro">I'm Fernando Martínez-López. I study <strong>reinforcement learning</strong>: how agents learn useful representations, make decisions, and adapt to unfamiliar environments and other agents.</p>
+    <p class="hero-intro">I'm Fernando Martínez-López, a Computer Science PhD student at Fordham University supervised by <a href="https://juntaochen1.github.io/">Juntao Chen</a>. I study <strong>reinforcement learning</strong>: how agents learn useful representations, make decisions, and adapt to unfamiliar environments and other agents.</p>
     <p>My current work explores decentralized multi-agent reinforcement learning using world models. My broader research connects representation learning, control, and game theory.</p>
     <p class="research-credentials">First-author research at <a href="{{ '/publication/scorer/' | relative_url }}">ICLR 2026</a> and <a href="{{ '/publication/coral/' | relative_url }}">IJCAI 2026</a>.</p>
     <div class="hero-actions"><a class="button button--primary" href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">Download CV <span class="button-note">PDF ↗</span></a><a class="button button--secondary" href="#selected-research">Explore my research ↓</a></div>

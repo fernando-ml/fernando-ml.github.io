@@ -8,6 +8,8 @@ excerpt: "Reinforcement learning research on representation learning, world mode
 
 <p class="page-lead">How can agents learn representations that help them make better decisions—and adapt when their environment or opponents change?</p>
 
+I am a Computer Science PhD student at Fordham University, supervised by [Juntao Chen](https://juntaochen1.github.io/).
+
 My research connects reinforcement learning with game theory and optimization. I study the interaction between representation learning and control, the use of world models for transferring knowledge across tasks, and adaptation in multi-agent settings.
 
 ## Research directions
