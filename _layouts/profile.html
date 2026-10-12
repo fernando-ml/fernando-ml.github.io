@@ -30,7 +30,19 @@
         {% if page.collection == 'portfolio' %}<p class="project-type">{{ page.project_type }}</p>{% if page.stack %}<p class="project-stack">{{ page.stack }}</p>{% endif %}{% endif %}
       </header>
       {% endunless %}
-      <div class="page-content">{% if page.collection == 'publications' %}<p class="page-lead">{{ page.summary }}</p><h2>{{ page.content_heading | default: 'Abstract' }}</h2>{% endif %}{{ content }}</div>
+      <div class="page-content">
+        {% if page.collection == 'publications' %}
+        <p class="page-lead">{{ page.summary }}</p>
+        {% if page.figure %}
+        <figure class="method-figure" id="method-figure">
+          <a href="{{ page.figure | relative_url }}" aria-label="Open {{ page.short_title | escape }} method figure at full resolution"><img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt | escape }}" width="{{ page.figure_width }}" height="{{ page.figure_height }}" decoding="async"></a>
+          <figcaption><a href="{{ page.figure | relative_url }}">Open full-size figure</a></figcaption>
+        </figure>
+        {% endif %}
+        <h2>{{ page.content_heading | default: 'Abstract' }}</h2>
+        {% endif %}
+        {{ content }}
+      </div>
       {% if page.collection == 'publications' %}<p class="back-link"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>{% endif %}
       {% if page.collection == 'portfolio' %}<p class="back-link"><a href="{{ '/portfolio/' | relative_url }}">All projects</a></p>{% endif %}
     </main>

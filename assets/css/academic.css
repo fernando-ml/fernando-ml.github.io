@@ -117,6 +117,10 @@ img { max-width: 100%; height: auto; }
 .home-section > h2:first-child { margin-top: 0; }
 .home-section .section-note { margin-bottom: 22px; }
 .publication-entry { margin-bottom: 25px; }
+.publication-entry--illustrated { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 24px; align-items: center; margin-bottom: 30px; }
+.publication-entry--illustrated .publication-copy { grid-column: 2; grid-row: 1; }
+.publication-thumbnail { grid-column: 1; grid-row: 1; display: block; }
+.publication-thumbnail img { display: block; width: 100%; height: auto; background: #fff; }
 .publication-entry h3 { margin: 0 0 5px; font-size: 16px; font-weight: 700; }
 .publication-entry p { margin-bottom: 4px; }
 .publication-authors { font-size: 14px; }
@@ -127,6 +131,10 @@ img { max-width: 100%; height: auto; }
 .resource-links li + li::before { content: "/"; color: var(--secondary); display: inline-block; margin: 0 8px; }
 .publication-meta { font-size: 14px; }
 .publication-list { margin: 18px 0 34px; }
+.method-figure { margin: 26px 0 30px; }
+.method-figure > a { display: block; }
+.method-figure img { display: block; width: 100%; height: auto; background: #fff; }
+.method-figure figcaption { margin-top: 8px; font-size: 13px; }
 .research-text h3 { margin-top: 24px; }
 .research-text h3:first-child { margin-top: 0; }
 .muted { color: var(--secondary); font-size: 14px; }
@@ -164,6 +172,7 @@ img { max-width: 100%; height: auto; }
   .profile-intro { grid-template-columns: minmax(0, 1fr) 165px; gap: 24px; }
   .profile-intro h1 { font-size: 29px; }
   .profile-portrait { width: 165px; height: 165px; }
+  .publication-entry--illustrated { grid-template-columns: 190px minmax(0, 1fr); gap: 20px; }
 }
 @media (max-width: 560px) {
   .site-main { padding: 25px 20px 20px; }
@@ -174,6 +183,9 @@ img { max-width: 100%; height: auto; }
   .experience-item { grid-template-columns: 1fr; gap: 4px; margin-bottom: 23px; }
   .skills-list { grid-template-columns: 1fr; gap: 4px; }
   .skills-list dd { margin-bottom: 12px; }
+  .publication-entry--illustrated { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .publication-entry--illustrated .publication-copy { grid-column: 1; grid-row: 1; }
+  .publication-thumbnail { grid-column: 1; grid-row: 2; }
   h1 { font-size: 27px; }
   h2 { font-size: 25px; }
   .site-footer { text-align: left; }

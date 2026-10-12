@@ -11,7 +11,7 @@ excerpt: "Research publications by Fernando Martínez-López in reinforcement le
 <h2>Reinforcement learning</h2>
 <div class="publication-list">
 {% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}
-{% for paper in selected %}{% include publication-entry.html item=paper %}{% endfor %}
+{% for paper in selected %}{% include publication-entry.html item=paper figures=true %}{% endfor %}
 </div>
 
 <h2>Additional publications</h2>

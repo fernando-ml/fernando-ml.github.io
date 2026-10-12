@@ -27,7 +27,7 @@ home: true
 <section class="home-section" id="selected-research" aria-labelledby="publications-title">
   <h2 id="publications-title">Selected research</h2>
   {% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}
-  {% for paper in selected %}{% include publication-entry.html item=paper details=true %}{% endfor %}
+  {% for paper in selected %}{% include publication-entry.html item=paper details=true figures=true %}{% endfor %}
   <p><a href="{{ '/publications/' | relative_url }}">Full publication list</a></p>
 </section>
 

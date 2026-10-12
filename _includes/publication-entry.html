@@ -1,7 +1,14 @@
-<article class="publication-entry">
-  <h3><a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a></h3>
-  <p class="publication-authors">{{ include.item.authors }}</p>
-  <p class="publication-venue"><em>{{ include.item.venue }}</em>, {{ include.item.publication_year }}{% if include.item.status %} ({{ include.item.status }}){% endif %}</p>
-  {% include resource-links.html item=include.item details=include.details %}
-  <p class="publication-summary">{{ include.item.summary }}</p>
+<article class="publication-entry{% if include.figures %} publication-entry--illustrated{% endif %}">
+  {% if include.figures and include.item.figure %}
+  <a class="publication-thumbnail" href="{{ include.item.url | relative_url }}#method-figure" aria-label="View {{ include.item.short_title | escape }} method figure">
+    <img src="{{ include.item.figure | relative_url }}" alt="{{ include.item.figure_alt | escape }}" width="{{ include.item.figure_width }}" height="{{ include.item.figure_height }}" loading="lazy" decoding="async">
+  </a>
+  {% endif %}
+  <div class="publication-copy">
+    <h3><a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a></h3>
+    <p class="publication-authors">{{ include.item.authors }}</p>
+    <p class="publication-venue"><em>{{ include.item.venue }}</em>, {{ include.item.publication_year }}{% if include.item.status %} ({{ include.item.status }}){% endif %}</p>
+    {% include resource-links.html item=include.item details=include.details %}
+    <p class="publication-summary">{{ include.item.summary }}</p>
+  </div>
 </article>
