@@ -1,25 +1,31 @@
 ---
 layout: profile
 title: "Projects"
-eyebrow: "Research code & applied work"
 permalink: /portfolio/
 excerpt: "Open-source reinforcement learning implementations and selected machine learning projects by Fernando Martínez-López."
 ---
 
-<p class="page-lead">Start with the implementations behind my reinforcement learning research, then explore earlier applied and learning projects.</p>
+<p>Start with the implementations behind my reinforcement learning research, then explore earlier applied and learning projects.</p>
 <h2>Research implementations</h2>
-<div class="project-grid">
 {% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}
 {% for paper in selected %}{% if paper.codeurl %}
-<article class="project-card"><p class="eyebrow">{{ paper.venue }} · {{ paper.publication_year }} · JAX / Python</p><h3><a href="{{ paper.codeurl }}">{{ paper.short_title }}</a></h3><p>{{ paper.summary }}</p>{% include resource-links.html item=paper %}<a class="text-link" href="{{ paper.url | relative_url }}">Research details →</a></article>
+<article class="project-entry">
+  <h3><a href="{{ paper.codeurl }}">{{ paper.short_title }}</a></h3>
+  <p class="project-type"><em>{{ paper.venue }}</em>, {{ paper.publication_year }}. JAX / Python.</p>
+  <p>{{ paper.summary }}</p>
+  {% include resource-links.html item=paper details=true %}
+</article>
 {% endif %}{% endfor %}
-</div>
 
-<h2>Applied & learning projects</h2>
-<div class="project-grid">
+<h2>Applied and learning projects</h2>
 {% assign projects = site.portfolio | sort: 'order' %}
 {% for project in projects %}
-<article class="project-card"><p class="eyebrow">{{ project.project_type }}</p><h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3><p>{{ project.excerpt }}</p>{% if project.stack %}<p class="project-stack">{{ project.stack }}</p>{% endif %}{% include resource-links.html item=project %}<a class="text-link" href="{{ project.url | relative_url }}">Project details →</a></article>
+<article class="project-entry">
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  <p class="project-type">{{ project.project_type }}</p>
+  <p>{{ project.excerpt }}</p>
+  {% if project.stack %}<p class="project-stack">{{ project.stack }}</p>{% endif %}
+  {% include resource-links.html item=project details=true %}
+</article>
 {% endfor %}
-</div>
-<p>More code on <a href="https://github.com/{{ site.author.github }}">GitHub ↗</a>.</p>
+<p>More code on <a href="https://github.com/{{ site.author.github }}">GitHub</a>.</p>

@@ -1,7 +1,8 @@
-<div class="resource-links">
-  {% if include.item.paperurl %}<a href="{{ include.item.paperurl }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}
-  {% if include.item.codeurl %}<a href="{{ include.item.codeurl }}">Code <span aria-hidden="true">↗</span></a>{% endif %}
-  {% if include.item.demourl %}<a href="{{ include.item.demourl }}">Demo <span aria-hidden="true">↗</span></a>{% endif %}
-  {% if include.item.reporturl %}<a href="{{ include.item.reporturl | relative_url }}">Report <span aria-hidden="true">↗</span></a>{% endif %}
-  {% if include.item.slidesurl %}<a href="{{ include.item.slidesurl | relative_url }}">Slides <span aria-hidden="true">↗</span></a>{% endif %}
-</div>
+<ul class="resource-links" aria-label="Resources for {{ include.item.title | escape }}">
+  {% if include.item.paperurl %}<li><a href="{{ include.item.paperurl }}">Paper</a></li>{% endif %}
+  {% if include.item.codeurl %}<li><a href="{{ include.item.codeurl }}">Code</a></li>{% endif %}
+  {% if include.item.demourl %}<li><a href="{{ include.item.demourl }}">Demo</a></li>{% endif %}
+  {% if include.item.reporturl %}<li><a href="{{ include.item.reporturl | relative_url }}">Report</a></li>{% endif %}
+  {% if include.item.slidesurl %}<li><a href="{{ include.item.slidesurl | relative_url }}">Slides</a></li>{% endif %}
+  {% if include.details %}<li><a href="{{ include.item.url | relative_url }}">Details</a></li>{% endif %}
+</ul>

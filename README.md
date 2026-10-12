@@ -22,9 +22,13 @@ Open `http://127.0.0.1:4000`. For a production build, run `bundle exec jekyll bu
 - `_portfolio/`: project descriptions. `order` controls display order, and `project_type` distinguishes research, applied work, and learning projects.
 - `files/Fernando_Martinez_CV.pdf`: current downloadable CV. Replace this file when updating the CV, then synchronize `_data/profile.yml` and the contact email in `_config.yml`.
 - `_data/navigation.yml`: main navigation.
-- `_layouts/profile.html` and `assets/css/profile.css`: shared layout and responsive styles.
+- `_layouts/profile.html` and `assets/css/academic.css`: shared layout and responsive styles.
 
 Before publishing, build the site, verify the paper and code links, and check the homepage and CV page on desktop and mobile. Remove the summer 2027 availability message when it is no longer current. Do not publish example credentials, placeholder content, unsupported metrics, or unpublished research results.
+
+## Design reference
+
+The layout and Lato typography are adapted from [Jon Barron's academic website](https://github.com/jonbarron/jonbarron.github.io), whose source is offered for personal reuse. The compact biography, text links, and publication list take inspiration from [Seohong Park's RL research website](https://seohong.me/). Site content remains in the existing Jekyll pages and data; template example content and analytics are not imported.
 
 ## Publishing
 

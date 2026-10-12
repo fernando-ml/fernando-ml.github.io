@@ -1,7 +1,0 @@
-<article class="publication-card{% if include.featured %} publication-card--featured{% endif %}">
-  <p class="publication-meta">{{ include.item.venue }} · {{ include.item.publication_year }}{% if include.item.status %} · {{ include.item.status }}{% endif %}</p>
-  <h3><a href="{{ include.item.url | relative_url }}">{% if include.featured and include.item.short_title %}<span class="paper-name">{{ include.item.short_title }}</span>{% endif %}{{ include.item.title }}</a></h3>
-  <p class="publication-authors">{{ include.item.authors }}</p>
-  <p>{{ include.item.summary }}</p>
-  {% include resource-links.html item=include.item %}
-</article>

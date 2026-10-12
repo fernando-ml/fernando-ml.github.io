@@ -1,0 +1,7 @@
+<article class="publication-entry">
+  <h3><a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a></h3>
+  <p class="publication-authors">{{ include.item.authors }}</p>
+  <p class="publication-venue"><em>{{ include.item.venue }}</em>, {{ include.item.publication_year }}{% if include.item.status %} ({{ include.item.status }}){% endif %}</p>
+  {% include resource-links.html item=include.item details=include.details %}
+  <p class="publication-summary">{{ include.item.summary }}</p>
+</article>

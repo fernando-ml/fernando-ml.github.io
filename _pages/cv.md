@@ -1,13 +1,12 @@
 ---
 layout: profile
 title: "CV & experience"
-eyebrow: "Research · Engineering · Applied modeling"
 permalink: /cv/
 excerpt: "Education, research and industry experience, technical skills, and academic service of Fernando Martínez-López. Download the current CV."
 ---
 
 <p class="page-lead">Computer Science PhD student researching reinforcement learning, with prior experience building and evaluating applied machine learning and quantitative models.</p>
-<div class="cv-actions"><a class="button button--primary" href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">Download full CV <span class="button-note">PDF ↗</span></a><a class="button button--secondary" href="mailto:{{ site.author.email }}">Contact me ↗</a></div>
+<div class="cv-actions"><a  href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">Download CV (PDF)</a><a  href="mailto:{{ site.author.email }}">Contact me</a></div>
 <p class="muted">Seeking research scientist internships in reinforcement learning for summer 2027.</p>
 
 <h2>Education</h2>
@@ -17,8 +16,8 @@ excerpt: "Education, research and industry experience, technical skills, and aca
 {% include experience-list.html %}
 
 <h2>Selected publications</h2>
-<div class="publication-list">{% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}{% for paper in selected %}{% include publication-card.html item=paper %}{% endfor %}</div>
-<p><a href="{{ '/publications/' | relative_url }}">Full publication list →</a></p>
+<div class="publication-list">{% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}{% for paper in selected %}{% include publication-entry.html item=paper %}{% endfor %}</div>
+<p><a href="{{ '/publications/' | relative_url }}">Full publication list</a></p>
 
 <h2>Technical skills</h2>
 <dl class="skills-list">{% for group in site.data.profile.skills %}<dt>{{ group.category }}</dt><dd>{{ group.tools }}</dd>{% endfor %}</dl>

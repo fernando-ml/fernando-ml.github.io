@@ -4,51 +4,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include seo.html %}
-    <meta name="theme-color" content="#f8f7f3">
+    <meta name="theme-color" content="#ffffff">
     <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-    <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-name" href="{{ '/' | relative_url }}">Fernando Martínez<span>-López</span><span class="site-name__dot" aria-hidden="true">.</span></a>
-        <nav aria-label="Main navigation">
-          {% for link in site.data.navigation.main %}
-          <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
-          {% endfor %}
-        </nav>
-      </div>
+    <header class="site-header{% if page.home %} site-header--home{% endif %}">
+      {% unless page.home %}<a class="site-name" href="{{ '/' | relative_url }}">Fernando Martínez-López</a>{% endunless %}
+      <nav aria-label="Main navigation">
+        {% for link in site.data.navigation.main %}
+        <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+      </nav>
     </header>
     <main id="main" class="site-main{% if page.home %} site-main--home{% endif %}" tabindex="-1">
       {% unless page.home %}
       <header class="page-heading">
-        <p class="eyebrow">{{ page.eyebrow | default: 'Fernando Martínez-López' }}</p>
         <h1>{{ page.title }}</h1>
         {% if page.collection == 'publications' %}
-        <p class="publication-meta">{{ page.venue }}{% if page.publication_year %} · {{ page.publication_year }}{% endif %}{% if page.status %} · {{ page.status }}{% endif %}</p>
         {% if page.authors %}<p class="publication-authors">{{ page.authors }}</p>{% endif %}
+        <p class="publication-meta"><em>{{ page.venue }}</em>{% if page.publication_year %}, {{ page.publication_year }}{% endif %}{% if page.status %} ({{ page.status }}){% endif %}</p>
         {% include resource-links.html item=page %}
         {% endif %}
-        {% if page.collection == 'portfolio' %}<p class="publication-meta">{{ page.project_type }}{% if page.stack %} · {{ page.stack }}{% endif %}</p>{% endif %}
+        {% if page.collection == 'portfolio' %}<p class="project-type">{{ page.project_type }}</p>{% if page.stack %}<p class="project-stack">{{ page.stack }}</p>{% endif %}{% endif %}
       </header>
       {% endunless %}
       <div class="page-content">{% if page.collection == 'publications' %}<p class="page-lead">{{ page.summary }}</p><h2>Abstract</h2>{% endif %}{{ content }}</div>
-      {% if page.collection == 'publications' %}<p class="back-link"><a href="{{ '/publications/' | relative_url }}">← All publications</a></p>{% endif %}
-      {% if page.collection == 'portfolio' %}<p class="back-link"><a href="{{ '/portfolio/' | relative_url }}">← All projects</a></p>{% endif %}
+      {% if page.collection == 'publications' %}<p class="back-link"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>{% endif %}
+      {% if page.collection == 'portfolio' %}<p class="back-link"><a href="{{ '/portfolio/' | relative_url }}">All projects</a></p>{% endif %}
     </main>
     <footer class="site-footer">
-      <div class="site-footer__inner">
-        <div><a class="footer-name" href="{{ '/' | relative_url }}">Fernando Martínez-López</a><p>Reinforcement learning · New York</p></div>
-        <nav aria-label="Contact and profiles">
-          <a href="mailto:{{ site.author.email }}">Email</a>
-          <a href="https://github.com/{{ site.author.github }}">GitHub</a>
-          <a href="{{ site.author.googlescholar }}">Scholar</a>
-          <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
-          <a href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">CV (PDF)</a>
-        </nav>
-      </div>
-      <div class="footer-bottom"><span>© {{ site.time | date: '%Y' }} {{ site.name }}</span><a href="{{ '/sitemap/' | relative_url }}">Sitemap</a></div>
+      <p>© {{ site.time | date: '%Y' }} Fernando Martínez-López. <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>.</p>
+      <p>Layout adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>, inspired by <a href="https://seohong.me/">Seohong Park</a>.</p>
     </footer>
   </body>
 </html>
