@@ -7,11 +7,11 @@ baseurl: ""
 repository: "fernando-ml/fernando-ml.github.io"
 timezone: America/New_York
 future: false
-og_image: "PersonalImage.JPG"
+og_image: "portrait.jpg"
 
 author:
   name: "Fernando Martínez-López"
-  avatar: "PersonalImage.JPG"
+  avatar: "portrait.jpg"
   email: "f.martinezlpz@gmail.com"
   github: "fernando-ml"
   linkedin: "mlfernando"

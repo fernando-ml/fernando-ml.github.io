@@ -21,7 +21,7 @@ home: true
       <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a></li>
     </ul>
   </div>
-  <figure class="profile-portrait"><img src="{{ '/images/PersonalImage.JPG' | relative_url }}" alt="Fernando Martínez-López" width="230" height="230"></figure>
+  <figure class="profile-portrait"><img src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="Fernando Martínez-López" width="230" height="230"></figure>
 </section>
 
 <section class="home-section" id="selected-research" aria-labelledby="publications-title">
