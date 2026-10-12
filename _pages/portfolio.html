@@ -1,14 +1,31 @@
 ---
-layout: archive
+layout: profile
 title: "Projects"
 permalink: /portfolio/
-author_profile: true
+excerpt: "Open-source reinforcement learning implementations and selected machine learning projects by Fernando Martínez-López."
 ---
 
-{% include base_path %}
+<p>Start with the implementations behind my reinforcement learning research, then explore earlier applied and learning projects.</p>
+<h2>Research implementations</h2>
+{% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}
+{% for paper in selected %}{% if paper.codeurl %}
+<article class="project-entry">
+  <h3><a href="{{ paper.codeurl }}">{{ paper.short_title }}</a></h3>
+  <p class="project-type"><em>{{ paper.venue }}</em>, {{ paper.publication_year }}. JAX / Python.</p>
+  <p>{{ paper.summary }}</p>
+  {% include resource-links.html item=paper details=true %}
+</article>
+{% endif %}{% endfor %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+<h2>Applied and learning projects</h2>
+{% assign projects = site.portfolio | sort: 'order' %}
+{% for project in projects %}
+<article class="project-entry">
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  <p class="project-type">{{ project.project_type }}</p>
+  <p>{{ project.excerpt }}</p>
+  {% if project.stack %}<p class="project-stack">{{ project.stack }}</p>{% endif %}
+  {% include resource-links.html item=project details=true %}
+</article>
 {% endfor %}
-
+<p>More code on <a href="https://github.com/{{ site.author.github }}">GitHub</a>.</p>

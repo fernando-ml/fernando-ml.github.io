@@ -1,59 +1,27 @@
 ---
-layout: archive
-title: "CV"
+layout: profile
+title: "CV & experience"
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+excerpt: "Education, research and industry experience, technical skills, and academic service of Fernando Martínez-López. Download the current CV."
 ---
 
-{% include base_path %}
+<p class="page-lead">Computer Science PhD student researching reinforcement learning, with prior experience building and evaluating applied machine learning and quantitative models.</p>
+<div class="cv-actions"><a  href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">Download CV (PDF)</a><a  href="mailto:{{ site.author.email }}">Contact me</a></div>
+<h2>Education</h2>
+<div class="experience-list">{% for degree in site.data.profile.education %}<article class="experience-item"><p class="experience-date">{{ degree.dates }}</p><div><h3>{{ degree.degree }}</h3><p class="experience-company">{{ degree.institution }}</p><p>{{ degree.detail }}</p></div></article>{% endfor %}</div>
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+<h2>Research & industry experience</h2>
+{% include experience-list.html %}
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+<h2>Selected research</h2>
+<div class="publication-list">{% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}{% for paper in selected %}{% include publication-entry.html item=paper %}{% endfor %}</div>
+<p><a href="{{ '/publications/' | relative_url }}">Full publication list</a></p>
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<h2>Technical skills</h2>
+<dl class="skills-list">{% for group in site.data.profile.skills %}<dt>{{ group.category }}</dt><dd>{{ group.tools }}</dd>{% endfor %}</dl>
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+<h2>Honors & awards</h2>
+<ul>{% for award in site.data.profile.awards %}<li>{{ award }}</li>{% endfor %}</ul>
+
+<h2>Academic service & volunteering</h2>
+<ul><li>Conference reviewer: NeurIPS, ICML, AAAI, and CDC (2026); INFOCOM NGResNet workshop (2025).</li><li>Upcoming conference service: ACC (2027).</li><li>Volunteer, TECHO, Santo Domingo, Dominican Republic.</li></ul>

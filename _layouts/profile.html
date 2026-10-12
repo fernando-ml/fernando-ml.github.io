@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include seo.html %}
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header{% if page.home %} site-header--home{% endif %}">
+      {% unless page.home %}<a class="site-name" href="{{ '/' | relative_url }}">Fernando Martínez-López</a>{% endunless %}
+      <nav aria-label="Main navigation">
+        {% for link in site.data.navigation.main %}
+        <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+    <main id="main" class="site-main{% if page.home %} site-main--home{% endif %}" tabindex="-1">
+      {% unless page.home %}
+      <header class="page-heading">
+        <h1>{{ page.title }}</h1>
+        {% if page.collection == 'publications' %}
+        {% if page.authors %}<p class="publication-authors">{{ page.authors }}</p>{% endif %}
+        <p class="publication-meta"><em>{{ page.venue }}</em>{% if page.publication_year %}, {{ page.publication_year }}{% endif %}{% if page.status %} ({{ page.status }}){% endif %}</p>
+        {% include resource-links.html item=page %}
+        {% endif %}
+        {% if page.collection == 'portfolio' %}<p class="project-type">{{ page.project_type }}</p>{% if page.stack %}<p class="project-stack">{{ page.stack }}</p>{% endif %}{% endif %}
+      </header>
+      {% endunless %}
+      <div class="page-content">
+        {% if page.collection == 'publications' %}
+        <p class="page-lead">{{ page.summary }}</p>
+        {% if page.figure %}
+        <figure class="method-figure" id="method-figure">
+          <a href="{{ page.figure | relative_url }}" aria-label="Open {{ page.short_title | escape }} method figure at full resolution"><img src="{{ page.figure | relative_url }}" alt="{{ page.figure_alt | escape }}" width="{{ page.figure_width }}" height="{{ page.figure_height }}" decoding="async"></a>
+          <figcaption><a href="{{ page.figure | relative_url }}">Open full-size figure</a></figcaption>
+        </figure>
+        {% endif %}
+        <h2>{{ page.content_heading | default: 'Abstract' }}</h2>
+        {% endif %}
+        {{ content }}
+      </div>
+      {% if page.collection == 'publications' %}<p class="back-link"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>{% endif %}
+      {% if page.collection == 'portfolio' %}<p class="back-link"><a href="{{ '/portfolio/' | relative_url }}">All projects</a></p>{% endif %}
+    </main>
+    <footer class="site-footer">
+      <p>© {{ site.time | date: '%Y' }} Fernando Martínez-López. <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>.</p>
+      <p>Template adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</p>
+    </footer>
+  </body>
+</html>
