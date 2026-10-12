@@ -22,4 +22,4 @@ excerpt: "Research publications by Fernando Martínez-López in reinforcement le
 
 <h2>Preprints and submitted manuscripts</h2>
 <p class="muted">Listed separately from published and accepted papers, with the status shown for each.</p>
-<div class="publication-list">{% for paper in publications %}{% if paper.status == 'Submitted manuscript' %}{% include publication-entry.html item=paper %}{% endif %}{% endfor %}</div>
+<div class="publication-list">{% for paper in publications %}{% if paper.status == 'Submitted manuscript' %}{% unless paper.selected %}{% include publication-entry.html item=paper %}{% endunless %}{% endif %}{% endfor %}</div>

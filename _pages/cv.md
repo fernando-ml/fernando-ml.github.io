@@ -7,15 +7,13 @@ excerpt: "Education, research and industry experience, technical skills, and aca
 
 <p class="page-lead">Computer Science PhD student researching reinforcement learning, with prior experience building and evaluating applied machine learning and quantitative models.</p>
 <div class="cv-actions"><a  href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">Download CV (PDF)</a><a  href="mailto:{{ site.author.email }}">Contact me</a></div>
-<p class="muted">Seeking research scientist internships in reinforcement learning for summer 2027.</p>
-
 <h2>Education</h2>
 <div class="experience-list">{% for degree in site.data.profile.education %}<article class="experience-item"><p class="experience-date">{{ degree.dates }}</p><div><h3>{{ degree.degree }}</h3><p class="experience-company">{{ degree.institution }}</p><p>{{ degree.detail }}</p></div></article>{% endfor %}</div>
 
 <h2>Research & industry experience</h2>
 {% include experience-list.html %}
 
-<h2>Selected publications</h2>
+<h2>Selected research</h2>
 <div class="publication-list">{% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}{% for paper in selected %}{% include publication-entry.html item=paper %}{% endfor %}</div>
 <p><a href="{{ '/publications/' | relative_url }}">Full publication list</a></p>
 

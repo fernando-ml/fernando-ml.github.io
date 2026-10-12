@@ -10,9 +10,9 @@ home: true
   <div class="profile-bio">
     <h1 id="intro-title">Fernando Martínez-López</h1>
     <p>I'm a PhD student in Computer Science at Fordham University, supervised by <a href="https://juntaochen1.github.io/">Juntao Chen</a>.</p>
-    <p>I study <strong>reinforcement learning</strong>, world models, and representation learning. My current work focuses on decentralized multi-agent reinforcement learning using world models. More broadly, I connect representation learning and control with game theory and optimization.</p>
-    <p>My first-author work includes <a href="{{ '/publication/scorer/' | relative_url }}">SCORER</a> (ICLR 2026) and <a href="{{ '/publication/coral/' | relative_url }}">CORAL</a> (IJCAI 2026). Before my PhD, I worked in applied machine learning and quantitative modeling across finance, energy, and tax administration.</p>
-    <p class="internship-note"><strong>I'm seeking summer 2027 research scientist internships in reinforcement learning.</strong></p>
+    <p>I study <strong>reinforcement learning</strong>, representation learning, and world models. I connect representation learning and control with game theory and optimization. My current focus is decentralized multi-agent learning using world models.</p>
+    <p>My first-author work includes <a href="{{ '/publication/scorer/' | relative_url }}">SCORER</a> (ICLR 2026) and <a href="{{ '/publication/coral/' | relative_url }}">CORAL</a> (IJCAI 2026).</p>
+    <p class="internship-note"><strong>I'm looking for a research internship in reinforcement learning for summer 2027.</strong></p>
     <ul class="profile-links" aria-label="Contact and professional profiles">
       <li><a href="mailto:{{ site.author.email }}">Email</a></li>
       <li><a href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">CV</a></li>
@@ -25,16 +25,10 @@ home: true
 </section>
 
 <section class="home-section" id="selected-research" aria-labelledby="publications-title">
-  <h2 id="publications-title">Selected publications</h2>
+  <h2 id="publications-title">Selected research</h2>
   {% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}
   {% for paper in selected %}{% include publication-entry.html item=paper details=true %}{% endfor %}
   <p><a href="{{ '/publications/' | relative_url }}">Full publication list</a></p>
-</section>
-
-<section class="home-section" aria-labelledby="current-title">
-  <h2 id="current-title">Current research</h2>
-  <p>My latest work, <a href="https://arxiv.org/abs/2610.07704">CASTLE</a>, uses counterfactual world models to guide independent multi-agent reinforcement learning. The preprint is public and submitted for review.</p>
-  <p><a href="{{ '/ongoingresearch/' | relative_url }}">More about my research</a></p>
 </section>
 
 <section class="home-section" aria-labelledby="experience-title">
@@ -48,4 +42,4 @@ home: true
   <p>I studied jazz guitar at the Santo Domingo Conservatory for three years. I'm still a jazz nerd, and these days I'm also learning chess.</p>
 </section>
 
-<p class="contact-line">For research internships or collaborations, reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+<p class="contact-line">You can reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
