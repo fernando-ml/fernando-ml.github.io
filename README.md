@@ -28,7 +28,7 @@ Before publishing, build the site, verify the paper and code links, and check th
 
 ## Design reference
 
-The layout and Lato typography are adapted from [Jon Barron's academic website](https://github.com/jonbarron/jonbarron.github.io), whose source is offered for personal reuse. The compact biography, text links, and publication list take inspiration from [Seohong Park's RL research website](https://seohong.me/). Site content remains in the existing Jekyll pages and data; template example content and analytics are not imported.
+The layout and Lato typography are adapted from [Jon Barron's academic website](https://github.com/jonbarron/jonbarron.github.io), whose source is offered for personal reuse. Site content remains in the existing Jekyll pages and data; template example content and analytics are not imported.
 
 ## Publishing
 

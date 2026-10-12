@@ -30,13 +30,13 @@
         {% if page.collection == 'portfolio' %}<p class="project-type">{{ page.project_type }}</p>{% if page.stack %}<p class="project-stack">{{ page.stack }}</p>{% endif %}{% endif %}
       </header>
       {% endunless %}
-      <div class="page-content">{% if page.collection == 'publications' %}<p class="page-lead">{{ page.summary }}</p><h2>Abstract</h2>{% endif %}{{ content }}</div>
+      <div class="page-content">{% if page.collection == 'publications' %}<p class="page-lead">{{ page.summary }}</p><h2>{{ page.content_heading | default: 'Abstract' }}</h2>{% endif %}{{ content }}</div>
       {% if page.collection == 'publications' %}<p class="back-link"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>{% endif %}
       {% if page.collection == 'portfolio' %}<p class="back-link"><a href="{{ '/portfolio/' | relative_url }}">All projects</a></p>{% endif %}
     </main>
     <footer class="site-footer">
       <p>© {{ site.time | date: '%Y' }} Fernando Martínez-López. <a href="{{ '/sitemap/' | relative_url }}">Sitemap</a>.</p>
-      <p>Layout adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>, inspired by <a href="https://seohong.me/">Seohong Park</a>.</p>
+      <p>Template adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.</p>
     </footer>
   </body>
 </html>

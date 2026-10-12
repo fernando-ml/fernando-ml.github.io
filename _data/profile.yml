@@ -1,4 +1,3 @@
-core_tools: [Python, JAX, PyTorch, TensorFlow, SQL, Docker]
 education:
   - degree: PhD in Computer Science
     institution: Fordham University
@@ -66,7 +65,7 @@ skills:
   - category: Programming & ML
     tools: "Python, JAX, PyTorch, TensorFlow, scikit-learn, NumPy, pandas, R, SQL, Bash, C++"
   - category: Data & infrastructure
-    tools: "PySpark, Snowflake, MongoDB, GCP, Azure, Microsoft Fabric, Docker, Kubernetes"
+    tools: "PySpark, Snowflake, MongoDB, GCP, Azure, Microsoft Fabric, Kubernetes"
   - category: Visualization
     tools: "Matplotlib, Seaborn, Tableau, Power BI"
 awards:

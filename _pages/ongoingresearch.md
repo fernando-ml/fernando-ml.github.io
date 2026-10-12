@@ -19,21 +19,22 @@ I connect reinforcement learning with game theory and optimization. I study the 
   <p>What information should an agent carry from one task to another? I explore communicative world models that provide transferable context for learning and adaptation.</p>
   <p><a href="{{ '/publication/coral/' | relative_url }}">CORAL (IJCAI 2026)</a></p>
   <h3>Decentralized multi-agent learning</h3>
-  <p>My current work explores decentralized multi-agent reinforcement learning using world models.</p>
-  <p><a href="#current-work">Current research</a></p>
+  <p>I study how predictive world models can guide agents that learn and act independently from local information.</p>
+  <p><a href="#current-work">CASTLE (preprint, 2026)</a></p>
 </div>
 
 <section class="research-in-progress" id="current-work" aria-labelledby="current-title">
-  <h2 id="current-title">Decentralized MARL with world models</h2>
-  <p>I am working on decentralized multi-agent reinforcement learning using world models.</p>
-  <p class="status-note">Details and public artifacts will be added when available.</p>
+  <h2 id="current-title">CASTLE: Decentralized MARL with world models</h2>
+  <p>CASTLE combines a local dynamics model with a model of the task and social consequences of candidate actions. Both are pretrained offline and frozen to guide independent PPO using local information, without inter-agent communication or a centralized critic.</p>
+  <p><a href="{{ '/publication/castle/' | relative_url }}">Independent Multi-Agent Reinforcement Learning with Counterfactual Semantic-Social World Models</a> / <a href="https://arxiv.org/abs/2610.07704">Paper</a></p>
+  <p class="status-note">Public preprint, October 2026. Submitted for review.</p>
 </section>
 
-<section class="submitted-research" id="sct" aria-labelledby="sct-title">
-  <h2 id="sct-title">Self-Confirming Transformer</h2>
-  <p>I have submitted this work on offline multi-agent reinforcement learning and online adaptation to previously unseen, nonstationary opponents.</p>
-  <p>The Self-Confirming Transformer (SCT) models an opponent's behavior as a belief and conditions its actions on that belief. Its objective is inspired by self-confirming equilibrium: linking what an agent believes about its opponent to the outcomes it observes.</p>
-  <p class="status-note">Submitted for review. A public paper link will be added when available.</p>
+<section class="recent-research" aria-labelledby="expert-title">
+  <h2 id="expert-title">Ask the Expert: LLM-guided reinforcement learning</h2>
+  <p>I also study LLM guidance for autonomous cyber defense. Ask the Expert turns occasional LLM recommendations into reward shaping during PPO training; the deployed policy runs without LLM calls.</p>
+  <p><a href="{{ '/publication/ask-the-expert/' | relative_url }}">Paper overview</a> / <a href="https://arxiv.org/abs/2610.09337">Paper</a></p>
+  <p class="status-note">Accepted at IEEE GLOBECOM 2026. Proceedings forthcoming.</p>
 </section>
 
 ## Earlier applied research

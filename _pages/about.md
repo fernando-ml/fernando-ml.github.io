@@ -33,7 +33,7 @@ home: true
 
 <section class="home-section" aria-labelledby="current-title">
   <h2 id="current-title">Current research</h2>
-  <p>I'm working on decentralized multi-agent reinforcement learning using world models. My Self-Confirming Transformer work on adaptation to unfamiliar, nonstationary opponents has been submitted for review.</p>
+  <p>My latest work, <a href="https://arxiv.org/abs/2610.07704">CASTLE</a>, uses counterfactual world models to guide independent multi-agent reinforcement learning. The preprint is public and submitted for review.</p>
   <p><a href="{{ '/ongoingresearch/' | relative_url }}">More about my research</a></p>
 </section>
 
@@ -43,10 +43,9 @@ home: true
   <p><a href="{{ '/cv/' | relative_url }}">Full CV and experience</a></p>
 </section>
 
-<section class="home-section" aria-labelledby="tools-title">
-  <h2 id="tools-title">Methods and tools</h2>
-  <p>Reinforcement learning, representation learning, world models, multi-agent learning, game theory, and bilevel optimization. My core tools include {{ site.data.profile.core_tools | join: ', ' }}.</p>
-  <p><a href="{{ '/portfolio/' | relative_url }}">Research implementations and projects</a></p>
+<section class="home-section" aria-labelledby="personal-title">
+  <h2 id="personal-title">Outside research</h2>
+  <p>I studied jazz guitar at the Santo Domingo Conservatory for three years. I'm still a jazz nerd, and these days I'm also learning chess.</p>
 </section>
 
 <p class="contact-line">For research internships or collaborations, reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
