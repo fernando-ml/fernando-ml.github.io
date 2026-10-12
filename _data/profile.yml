@@ -1,0 +1,78 @@
+core_tools: [Python, JAX, PyTorch, TensorFlow, SQL, Docker]
+education:
+  - degree: PhD in Computer Science
+    institution: Fordham University
+    dates: "Aug 2024 – expected May 2029"
+    detail: "Research and teaching assistant. Reinforcement learning, world models, representation learning, multi-agent learning, and game/decision theory."
+  - degree: MSc in Data Science
+    institution: Fordham University
+    dates: "Jan 2022 – May 2023"
+    detail: "GPA: 4.00/4.00. Research and teaching assistant for Algorithms for Data Science and Data Visualization."
+  - degree: Master of Business Administration
+    institution: Quantic School of Business and Technology
+    dates: "Mar 2021 – Mar 2022"
+    detail: Honors.
+  - degree: BS in Business Engineering
+    institution: Santo Domingo Institute of Technology (INTEC)
+    dates: "Aug 2014 – Apr 2018"
+    detail: "GPA: 3.81/4.00. Summa Cum Laude. Meritorious Scholarship (top 1% program)."
+experience:
+  - role: Fordham–IBM Research Intern
+    organization: Fordham University
+    dates: "May – Jul 2025"
+    summary: "Collaborative research on representation learning and reinforcement learning using Stackelberg games and bilevel optimization. First-author work published at ICLR 2026."
+    points:
+      - "Conducted collaborative research on coupling representation learning and reinforcement learning through a Stackelberg-game formulation and bilevel optimization."
+      - "First author of SCORER, published at ICLR 2026."
+  - role: Quantitative Modeling, Assistant Vice President
+    organization: MUFG Americas · CCAR Capital Planning
+    dates: "Jul 2023 – Aug 2024"
+    summary: "Developed quantitative models and automated an interconnected capital planning model suite, with validation, performance monitoring, and stress testing."
+    points:
+      - "Led development and implementation of an interconnected capital planning model suite, automating workflows and reducing opportunities for human error."
+      - "Redeveloped quantitative models and evaluated new predictors for performance and business relevance."
+      - "Validated and monitored models, including stress testing under extreme input conditions."
+  - role: Data Scientist
+    organization: Smart Energy
+    dates: "Sep 2021 – Jul 2023"
+    summary: "Built end-to-end machine learning models and ran A/B experiments to support marketing campaigns for more than 10,000 warm leads."
+    points:
+      - "Developed end-to-end machine learning models to support marketing campaigns for more than 10,000 warm leads."
+      - "Analyzed data, ran A/B experiments, and communicated findings and recommendations to stakeholders."
+  - role: Data Scientist, Research and Analytics Office
+    organization: General Directorate of Internal Taxes · Dominican Republic
+    dates: "Apr 2020 – Sep 2021"
+    summary: "Built and evaluated machine learning models for tax noncompliance detection and taxpayer risk profiling."
+    points:
+      - "Created, validated, tested, and tuned machine learning models for tax noncompliance detection and risk profiling."
+      - "Produced analyses and recommendations to support tax auditing decisions."
+  - role: Data Analyst, Registry Office
+    organization: General Directorate of Internal Taxes · Dominican Republic
+    dates: "Sep 2018 – Apr 2020"
+    summary: "Developed automated tax assignment and digital registry workflows."
+    points:
+      - "Implemented digital forms for the National Taxpayer Registry."
+      - "Designed and developed automated tax assignment based on economic activities and taxpayer behavior."
+  - role: Project Analyst
+    organization: INABIMA · Dominican Republic
+    dates: "Aug 2017 – Sep 2018"
+    summary: "Established a risk-based project management system and statistical indicators for social impact evaluation."
+    points:
+      - "Established a risk-based project management system."
+      - "Implemented statistical indicators to evaluate social impact."
+skills:
+  - category: Research
+    tools: "Reinforcement learning, world models, representation learning, multi-agent learning, game/decision theory, bilevel optimization"
+  - category: Programming & ML
+    tools: "Python, JAX, PyTorch, TensorFlow, scikit-learn, NumPy, pandas, R, SQL, Bash, C++"
+  - category: Data & infrastructure
+    tools: "PySpark, Snowflake, MongoDB, GCP, Azure, Microsoft Fabric, Docker, Kubernetes"
+  - category: Visualization
+    tools: "Matplotlib, Seaborn, Tableau, Power BI"
+awards:
+  - "AI Summer Research Fellowships, Fordham University (2025, 2026)"
+  - "GSAS Graduate Research Assistantship Award, Fordham University (2022)"
+  - "Full International Scholarship, Dominican Republic Ministry of Higher Education, Science, and Technology (2021)"
+  - "Full Scholarship, Quantic School of Business and Technology (2021)"
+  - "Summa Cum Laude, INTEC (2018)"
+  - "Meritorious Scholarship, INTEC (2014; top 1% program)"

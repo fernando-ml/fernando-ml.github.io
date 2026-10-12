@@ -1,0 +1,10 @@
+<div class="experience-list">
+  {% for job in site.data.profile.experience limit:include.limit %}
+  <article class="experience-item">
+    <p class="experience-date">{{ job.dates }}</p>
+    <div><h3>{{ job.role }}</h3><p class="experience-company">{{ job.organization }}</p>
+      {% if include.compact %}<p>{{ job.summary }}</p>{% else %}<ul>{% for point in job.points %}<li>{{ point }}</li>{% endfor %}</ul>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

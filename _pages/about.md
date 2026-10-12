@@ -1,20 +1,41 @@
 ---
+layout: profile
 permalink: /
-title: "Fernando Martínez"
-excerpt: "Personal site"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+title: "Fernando Martínez-López | Reinforcement Learning Research"
+excerpt: "Computer Science PhD student at Fordham researching reinforcement learning, world models, and multi-agent adaptation. Seeking summer 2027 research internships."
+home: true
 ---
-I am a second‑year PhD student in Computer Science specializing in deep reinforcement learning and machine learning.
 
-Lately my research centers on decision‑making under uncertainty, connecting reinforcement learning with game‑theoretic modeling and optimization to build scalable, reliable agents.
+<section class="hero" aria-labelledby="intro-title">
+  <div class="hero-copy">
+    <p class="eyebrow">PhD researcher · Fordham University · New York</p>
+    <p class="hero-availability">Seeking RL research internships · Summer 2027</p>
+    <h1 id="intro-title">Learning to act.<br><em>Learning to adapt.</em></h1>
+    <p class="hero-intro">I'm Fernando Martínez-López. I study <strong>reinforcement learning</strong>: how agents learn useful representations, make decisions, and adapt to unfamiliar environments and other agents.</p>
+    <p>My current work explores decentralized multi-agent reinforcement learning using world models. My broader research connects representation learning, control, and game theory.</p>
+    <p class="research-credentials">First-author research at <a href="{{ '/publication/scorer/' | relative_url }}">ICLR 2026</a> and <a href="{{ '/publication/coral/' | relative_url }}">IJCAI 2026</a>.</p>
+    <div class="hero-actions"><a class="button button--primary" href="{{ '/files/Fernando_Martinez_CV.pdf' | relative_url }}">Download CV <span class="button-note">PDF ↗</span></a><a class="button button--secondary" href="#selected-research">Explore my research ↓</a></div>
+    <nav class="profile-links" aria-label="Professional profiles"><a href="{{ site.author.googlescholar }}">Google Scholar ↗</a><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn ↗</a></nav>
+  </div>
+  <figure class="hero-portrait"><img src="{{ '/images/PersonalImage.JPG' | relative_url }}" alt="Fernando Martínez-López" width="400" height="400"><figcaption>Research & teaching assistant<br>Computer Science, Fordham University</figcaption></figure>
+</section>
 
-<!-- I'm a Data Scientist and Machine Learning Engineer working in multiple applications and getting the best insights out of data, the 21st Century gold. I enjoy turning complex problems into simple, practical, innovative, and impactful solutions. My job is to create end-to-end Machine Learning products alongside performing hands-on data analyses over enormous datasets toward detecting patterns and inducing better data-driven decision making. -->
+<aside class="opportunity" aria-label="Internship availability"><span class="opportunity-dot" aria-hidden="true"></span><div><strong>Seeking summer 2027 research internships</strong><span>Reinforcement learning · World models · Multi-agent learning</span></div><a href="mailto:{{ site.author.email }}">Let's talk <span aria-hidden="true">↗</span></a></aside>
 
-Previously, I worked in applied machine learning and data science roles, where I have applied quantitative analysis, experiment design, and develop ML models for diverse business solutions. Throughout 7 years of experience, I have had the opportunity to design and create models that are helping organizations manage risk behavior profiles, reduce tax gaps, and build advanced analytical engines for forecasting and detecting deviations from unstructured information.
+<section class="home-section" id="selected-research" aria-labelledby="research-title">
+  <div class="section-heading"><div><p class="eyebrow">Selected research</p><h2 id="research-title">Representations that support better decisions.</h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications ↗</a></div>
+  <div class="featured-research">
+    {% assign selected = site.publications | where: 'selected', true | sort: 'feature_order' %}
+    {% for paper in selected %}{% include publication-card.html item=paper featured=true %}{% endfor %}
+  </div>
+  <a class="research-next" href="{{ '/ongoingresearch/' | relative_url }}"><span class="eyebrow">In progress</span><span>Decentralized multi-agent reinforcement learning with world models</span><span aria-hidden="true">→</span></a>
+</section>
 
-<!-- With over 6 years of industry experience, I have applied quantitative analysis, experiment design, and develop machine learning models for diverse business solutions. Throughout this experience, I have had the opportunity to design and create models that are helping organizations manage risk behavior profiles, reduce tax gaps, and build advanced analytical engines for forecasting and detecting deviations from unstructured information. -->
+<section class="home-section" aria-labelledby="experience-title">
+  <div class="section-heading"><div><p class="eyebrow">Research meets practice</p><h2 id="experience-title">From applied modeling to adaptive agents.</h2></div><a class="text-link" href="{{ '/cv/' | relative_url }}">Full experience ↗</a></div>
+  {% include experience-list.html limit=3 compact=true %}
+</section>
 
-<!-- Lately, my focus has been on research in Artificial Intelligence, especially in making deep learning models more reliable, robust, and easier to understand, particularly in computer vision and large language models. Moreover, my work has been focused on hybrid intelligence and its application at the intersection of AI with multiple scientific areas, helping us uncover new insights and solve problems more creatively. Ultimately, I believe AI is not only about pushing the boundaries of technology; it's about ensuring these tools are used in ways that are meaningful, responsible, and truly beneficial to society. -->
+<section class="home-section skills-section" aria-labelledby="tools-title"><div><p class="eyebrow">Methods & tools</p><h2 id="tools-title">Theory, implementation, evaluation.</h2></div><div><p>Reinforcement learning, representation learning, world models, game theory, and bilevel optimization.</p><ul class="tag-list" aria-label="Core technical tools">{% for tool in site.data.profile.core_tools %}<li>{{ tool }}</li>{% endfor %}</ul><a class="text-link" href="{{ '/portfolio/' | relative_url }}">Explore implementations & projects ↗</a></div></section>
+
+<section class="contact-panel" aria-labelledby="contact-title"><p class="eyebrow">Summer 2027</p><h2 id="contact-title">Let's build agents that learn and adapt.</h2><p>I'm interested in research scientist internships focused on reinforcement learning, world models, and multi-agent systems. If your team works on these problems, I'd love to connect.</p><a href="mailto:{{ site.author.email }}">{{ site.author.email }} <span aria-hidden="true">↗</span></a></section>

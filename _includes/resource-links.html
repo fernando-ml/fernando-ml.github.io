@@ -1,0 +1,7 @@
+<div class="resource-links">
+  {% if include.item.paperurl %}<a href="{{ include.item.paperurl }}">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+  {% if include.item.codeurl %}<a href="{{ include.item.codeurl }}">Code <span aria-hidden="true">↗</span></a>{% endif %}
+  {% if include.item.demourl %}<a href="{{ include.item.demourl }}">Demo <span aria-hidden="true">↗</span></a>{% endif %}
+  {% if include.item.reporturl %}<a href="{{ include.item.reporturl | relative_url }}">Report <span aria-hidden="true">↗</span></a>{% endif %}
+  {% if include.item.slidesurl %}<a href="{{ include.item.slidesurl | relative_url }}">Slides <span aria-hidden="true">↗</span></a>{% endif %}
+</div>

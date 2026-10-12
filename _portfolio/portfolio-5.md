@@ -1,13 +1,23 @@
 ---
-title: "Predicting Term Deposit Subscriptions"
-excerpt: "Data Mining Final Project Course<br/><img src='/images/term_deposit.png'>"
-collection: portfolio
+title: "Predicting term deposit subscriptions"
+collection: "portfolio"
+project_type: "Data mining course project"
+order: 3
+stack: "Classification · Model evaluation"
+excerpt: "A bank marketing classification project predicting whether a customer will subscribe to a term deposit, with code, report, and slides."
+codeurl: "https://github.com/fernando-ml/ClassProjectsMSc/tree/main/Data%20Mining"
 ---
 
-Marketing is a vital part of almost every business, since it is the sum of activities involved in directing the flow of goods and services from producers to consumers and because of this, many companies decide to do what is known as a marketing campaign. According to E.Taver, marketing campaigns are often used by companies to help promote products to current and future clients and this also helps companies that lose sales due to major negative press frequently use marketing campaigns to rehabilitate their image.
-Due to the importance of marketing, we decided to use a bank marketing dataset to create a model that can predict if a certain client is likely to open a term deposit account or not. For context, in banking a term deposit account is a type of account held at a financial institution where money is locked up for some set period of time, that pays the depositor compensation in the form of interest on the account balance.
-During this project, we play the roleplaying game of working on a team developing a model to set it into a production environment in the banking market.
+## Goal
 
-[Report](https://github.com/fernando-ml/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/report.pdf){: .btn}
-[Slides](https://github.com/fernando-ml/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/slides.pdf){: .btn}
-[Code](https://github.com/fernando-ml/ClassProjectsMSc/tree/main/Data%20Mining){: .btn}
+Predict whether a customer will subscribe to a term deposit using a bank marketing dataset.
+
+## Scope
+
+A team project for a data mining course, framed around building a predictive model for a banking marketing use case. The repository includes the implementation, written report, and presentation.
+
+The project simulated a production-oriented scenario; it was a course project and was not deployed at a bank.
+
+[Explore the code](https://github.com/fernando-ml/ClassProjectsMSc/tree/main/Data%20Mining){: .btn}
+[Read the report](https://github.com/fernando-ml/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/report.pdf){: .btn}
+[View the slides](https://github.com/fernando-ml/ClassProjectsMSc/blob/149f0771a053ac7d81066e184102b4e16f1260ea/Data%20Mining/slides.pdf){: .btn}

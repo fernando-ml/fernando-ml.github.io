@@ -1,205 +1,31 @@
 ---
+layout: profile
 permalink: /ongoingresearch/
-title: "Ongoing Research"
-author_profile: true
-redirect_from: 
-  - /md/
-  - /ongoingresearch.html
+title: "Research"
+eyebrow: "Learning and decision-making"
+excerpt: "Reinforcement learning research on representation learning, world models, and adaptation to unfamiliar environments and opponents."
 ---
-* Working on **Self-Confirming Transformer (SCT)**, a framework for offline multi-agent reinforcement learning that allows online adaptation to previously unseen, nonstationary opponents. **SCT** models opponent behavior as a "belief," conditioning its own actions on this belief through an objective inspired by the game-theoretic concept of self-confirming equilibrium. 
-<!-- ## Test title -->
 
-<!-- * Developing an Adaptive Multi-Modality Deep Learning Framework, targeting the identification of Zero-day DoS attacks by recognizing anomalies outside established patterns.
-* Joint collaboration with the Fordham EDM lab to research methods to detect AI revised and mixed human/AI academic materials, enhancing the use of generative models for academic integrity. -->
-<!-- * Joint collaboration with the University of Toronto and TorontoTech University developing an interpretable pattern discovery algorithm designed to predict diseases from clinical notes. -->
-<!-- * Joint collaboration with Harvard Medical School and the Massachusets General Hospital exploring the use of ML methods to evaluate risks of Hydroxychloroquine Retinopathy after initializing HCQ medication. -->
-<!-- Work in progress. -->
-<!-- * Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+<p class="page-lead">How can agents learn representations that help them make better decisions—and adapt when their environment or opponents change?</p>
 
-## Tips and hints
+My research connects reinforcement learning with game theory and optimization. I study the interaction between representation learning and control, the use of world models for transferring knowledge across tasks, and adaptation in multi-agent settings.
 
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
+## Research directions
 
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
+<div class="direction-grid">
+  <article><span class="direction-number">01</span><h3>Representation learning & control</h3><p>Learning useful features and a policy together can create unstable feedback. I study how game-theoretic coordination and different update timescales can improve this interaction.</p><a href="{{ '/publication/scorer/' | relative_url }}">SCORER · ICLR 2026 ↗</a><a href="{{ '/publication/sprig/' | relative_url }}">SPRIG · AAAI PRL Workshop 2025 ↗</a></article>
+  <article><span class="direction-number">02</span><h3>World models & transfer</h3><p>What information should an agent carry from one task to another? I explore communicative world models that provide transferable context for learning and adaptation.</p><a href="{{ '/publication/coral/' | relative_url }}">CORAL · IJCAI 2026 ↗</a></article>
+  <article><span class="direction-number">03</span><h3>Decentralized multi-agent learning</h3><p>My current work explores decentralized multi-agent reinforcement learning using world models.</p><a href="#current-work">Current research ↓</a></article>
+</div>
 
-## Markdown guide
+<section class="research-in-progress" id="current-work" aria-labelledby="current-title"><p class="eyebrow">Current work</p><h2 id="current-title">Decentralized MARL with world models</h2><p>I am working on decentralized multi-agent reinforcement learning using world models.</p><p class="muted">Details and public artifacts will be added when available.</p></section>
 
-### Header three
+<section class="submitted-research" id="sct" aria-labelledby="sct-title"><p class="eyebrow">Submitted manuscript</p><h2 id="sct-title">Self-Confirming Transformer</h2><p>I have submitted this work on offline multi-agent reinforcement learning and online adaptation to previously unseen, nonstationary opponents.</p><p>The Self-Confirming Transformer (SCT) models an opponent's behavior as a belief and conditions its actions on that belief. Its objective is inspired by self-confirming equilibrium: linking what an agent believes about its opponent to the outcomes it observes.</p><p class="muted">Submitted for review. A public paper link will be added when available.</p></section>
 
-#### Header four
+## Earlier applied research
 
-##### Header five
+My earlier work includes few-shot network attack detection, visual attention, interpretable learning for healthcare, and the evaluation of AI-generated text and images. These projects inform my interest in generalization and careful empirical evaluation.
 
-###### Header six
+[Browse all publications]({{ '/publications/' | relative_url }})
 
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
-
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
-{: .notice}
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](https://github.com "Github").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-### Strike Tag
-
-This tag will let you <strike>strikeout text</strike>.
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-
-### Quote Tag
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-### Superscript Tag
-
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
-
-### Variable Tag
-
-This allows you to denote <var>variables</var>. -->
+<div class="contact-strip"><strong>Seeking summer 2027 RL research internships.</strong><a href="mailto:{{ site.author.email }}">Contact me ↗</a></div>

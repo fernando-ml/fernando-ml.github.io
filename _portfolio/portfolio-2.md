@@ -1,10 +1,21 @@
 ---
-title: "Snake: Reinforcement Learning Agent"
-excerpt: "RL Agent that learns to play Snake (QNet) <br/><img src='/images/SnakeAI.png'>"
-collection: portfolio
+title: "Snake: reinforcement learning agent"
+collection: "portfolio"
+project_type: "Independent learning project"
+order: 2
+stack: "Reinforcement learning · Neural Q-function"
+excerpt: "A neural-network-based reinforcement learning agent that learns to play Snake. A compact implementation of the environment–agent learning loop."
+codeurl: "https://github.com/fernando-ml/LearningLeap/tree/main/SnakeRL"
 ---
-Developed an agent that learns how to play the classic game Snake. The core idea revolves around reinforcement learning, utilizing a simple neural network.
 
-![snakeGIF](https://github.com/fernando-ml/LearningLeap/assets/45270620/051aa0d8-69e9-42f6-b62f-0b11f59fe780)
+## Goal
 
-[Code](https://github.com/fernando-ml/LearningLeap/tree/main/SnakeRL){: .btn}
+Train an agent to play Snake using a neural network to guide decisions through reinforcement learning.
+
+## What I built
+
+A learning agent that interacts with the game, receives feedback, and learns action values. This project helped develop my implementation skills in reinforcement learning before my current research on representation learning and control.
+
+![The reinforcement learning agent playing Snake]({{ '/images/snakeGIF.gif' | relative_url }})
+
+[Explore the code](https://github.com/fernando-ml/LearningLeap/tree/main/SnakeRL){: .btn}
